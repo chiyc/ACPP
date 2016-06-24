@@ -1,0 +1,6 @@
+4-8. If the following code is legal, what can we infer about the return type of f?
+double d = f()[n];
+
+// From what we've learned, the [n] notation is used to access an item in a vector. 
+// Also given that d is of type double, we can infer that the the return type of f
+// is vector<double>

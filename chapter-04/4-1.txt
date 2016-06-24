@@ -1,0 +1,13 @@
+4-1. We noted in §4.2.3/65 that it is essential that the argument types in a call to max
+match exactly. Will the following code work? If there is a problem, how would you fix it?
+
+int maxlen;
+Student_info s;
+max(s.name.size(), maxlen);
+
+// The code as given does not work because the type of s.name.size() is std::string::size_type
+// while the type of maxlen is int.
+
+// The code can be rewritten to initiate maxlen with the following declaration,
+
+// std::string::size_type maxlen;
